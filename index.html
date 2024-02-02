@@ -9,7 +9,11 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=window.innerWidth height=window.innerHeight></canvas>
+      <canvas id="unity-canvas" window.addEventListener(" resize", function (){
+let canvas = document.getElementById(" #canvas");
+canvas.style.width = window.innerWidth;
+canvas.style.height = window.innerHeight;
+})></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
